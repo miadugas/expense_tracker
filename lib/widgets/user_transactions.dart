@@ -25,13 +25,21 @@ class _UserTransactionsState extends State<UserTransactions> {
     ),
   ];
 
+void _addNewTransaction(String title, double amount) {
+
+}
+
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>
       [
       NewTransaction(),     // input areas
-      TransactionList(),
+      TransactionList(_userTransactions),
       ],
     );
   }
