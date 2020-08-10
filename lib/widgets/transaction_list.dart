@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import '../models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
@@ -10,7 +9,9 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Container(
+      height: 300,
+    child: Column(
       children: transactions.map((tx) {
         return Card(
           child: Row(
@@ -58,6 +59,8 @@ class TransactionList extends StatelessWidget {
           ),
         );
       }).toList(),
+    )
     );
+    
   }
 }

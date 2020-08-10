@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product Tracker'),
+        title: Text('Expense Tracker'),
       ),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.start,
@@ -40,11 +40,12 @@ class MyHomePage extends StatelessWidget {
               color: Colors.blue,
               child: Text('CHART!'),
               elevation: 5,
-            ),
+            ),  
           ), 
-          UserTransactions()
+          UserTransactions(),
         ],
-      ),
+        ),
+      
     );
   }
 }
